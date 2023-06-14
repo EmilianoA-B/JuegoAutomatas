@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: c51b505a21cd24e4c836a9c4e487d5cc
+guid: 1c661506e2ebedc4d9bcc1047cd9337e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - spike: {fileID: 6791911952067484409, guid: 06acb032894ddda40acfbf67776b7916, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -32,6 +32,7 @@ public class SpawnScript : MonoBehaviour
         }
     }
 
+    
     void spawnSpikes()
     {   
         Instantiate(spike,transform.position, transform.rotation);

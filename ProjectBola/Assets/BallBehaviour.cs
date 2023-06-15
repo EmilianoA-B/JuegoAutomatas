@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BallBehaviour : MonoBehaviour
 {
+    public LogicCode LogicCode;
     bool ballGround = true;
     bool ballAlive = true;
     public Rigidbody2D ballBody;
@@ -13,7 +14,7 @@ public class BallBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        LogicCode = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicCode>();
     }
 
     // Update is called once per frame
@@ -33,5 +34,11 @@ public class BallBehaviour : MonoBehaviour
     public void ballisDead()
     {
         ballAlive = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 0)
+        LogicCode.addPoint();
     }
 }

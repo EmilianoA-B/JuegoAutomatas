@@ -8,7 +8,7 @@ public class CloudSpawner : MonoBehaviour
     public float highestPoint = 1.3f;
     public float lowestPoint = -1.3f;
     public float spawnRate = 3;
-    private float timer = 0;
+    private float timer = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class CloudSpawner : MonoBehaviour
         if(timer > spawnRate)
         {
             timer = 0;
-            spawnRate = Random.Range(spawnRate-2,spawnRate+2);
+            spawnRate = Random.Range(1,2);
             spawnCloud();
         }
         else

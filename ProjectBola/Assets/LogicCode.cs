@@ -49,7 +49,7 @@ public class LogicCode : MonoBehaviour
     public void restartGame()
     {
         score = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Scenes/FirstScene");
     }
 
     public void checkHighscore()

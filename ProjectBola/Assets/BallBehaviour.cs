@@ -6,11 +6,14 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     public LogicCode LogicCode;
-    bool ballGround = true;
+    bool ballGround = false;
     bool ballAlive = true;
     public Rigidbody2D ballBody;
     public BoxCollider2D ground;
     public float Jump;
+
+    private AudioSource oof;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,8 @@ public class BallBehaviour : MonoBehaviour
     public void ballisDead()
     {
         ballAlive = false;
+        oof = GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

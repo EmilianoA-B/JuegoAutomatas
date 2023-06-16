@@ -9,6 +9,7 @@ public class SpawnScript : MonoBehaviour
     public float spawnRate = 3;
     private float timer = 0;
     public float secondsUntilSpeedIncrease = 100;
+
     
     // Start is called before the first frame update
     void Start()
@@ -24,9 +25,9 @@ public class SpawnScript : MonoBehaviour
             timer += Time.deltaTime;
            
         }
-        else if (timer > spawnRate)
+        else if (timer >= spawnRate)
         {
-            spawnRate = Random.Range(1.5f, spawnRate + 2);
+            spawnRate = Random.Range(1,4);
             timer = 0;
             spawnSpikes();
         }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
+using Unity.VisualScripting;
 
 public class LogicCode : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class LogicCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     [ContextMenu("addPoint")]
@@ -59,4 +60,5 @@ public class LogicCode : MonoBehaviour
             highScore.text = score.ToString(); 
         }
     }
+
 }

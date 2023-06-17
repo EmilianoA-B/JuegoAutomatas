@@ -1024,7 +1024,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: THE BALL
 --- !u!222 &1074613091
 CanvasRenderer:
   m_ObjectHideFlags: 0
